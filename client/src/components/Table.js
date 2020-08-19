@@ -1,12 +1,13 @@
 import React from "react";
+import sortButton from "./SortButton";
+import FilterButton from "./FilterButton.js";
 
 const Table = (props) => {
   return (
     <div className="container">
-      <table>
+      <table classname="mx-auto">
         <thead>
           <tr>
-            <th>Date Registered</th>
             <th>First Name</th>
             <th>Last Name</th>
             <th>Mobile Number</th>
@@ -16,7 +17,6 @@ const Table = (props) => {
         <tbody>
           {props.data.map((row) => (
             <tr>
-              <td>{row.registered.date}</td>
               <td>{row.name.first}</td>
               <td>{row.name.last}</td>
               <td>{row.cell}</td>
