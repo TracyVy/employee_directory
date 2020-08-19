@@ -9,7 +9,7 @@ function App() {
       <div className="page-container mx-auto">
         <h1>Employees Table</h1>
 
-        <Table data={this.state.data} />
+        <Table data={data} />
       </div>
     </div>
   );
