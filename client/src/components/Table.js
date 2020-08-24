@@ -1,11 +1,9 @@
 import React from "react";
-import sortButton from "./SortButton";
-import FilterButton from "./FilterButton.js";
 
 const Table = (props) => {
   return (
-    <div className="container">
-      <table classname="mx-auto">
+    <div className="table-responsive">
+      <table className="table table-bordered">
         <thead>
           <tr>
             <th>First Name</th>
