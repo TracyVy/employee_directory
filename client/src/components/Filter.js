@@ -8,10 +8,10 @@ const Filter = (props) => {
       (emp) =>
         emp.name.first
           .toLowerCase()
-          .indexOf(e.currentTarget.value.toLowerCase()) != -1 ||
+          .indexOf(e.currentTarget.value.toLowerCase()) !== -1 ||
         emp.name.last
           .toLowerCase()
-          .indexOf(e.currentTarget.value.toLowerCase()) != -1
+          .indexOf(e.currentTarget.value.toLowerCase()) !== -1
     );
 
     props.updatedEmployees([...filteredEmployees]);
