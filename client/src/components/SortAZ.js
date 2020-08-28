@@ -14,7 +14,7 @@ const SortAZ = (props) => {
     props.updatedEmployees([...sortedAZ]);
   };
 
-  return <button onClick={sortAZ}>Sort last name by (A - Z)</button>;
+  return <button onClick={sortAZ}>Sort last name (A - Z)</button>;
 };
 
 export default SortAZ;

@@ -5,7 +5,7 @@ import data from "./data/employees.json";
 import Nav from "./components/Nav";
 import SortAZ from "./components/SortAZ";
 import SortZA from "./components/SortZA";
-import FilterButton from "./components/FilterButton";
+import Filter from "./components/Filter";
 
 function App() {
   const [employees, updatedEmployees] = useState(data);
@@ -15,11 +15,14 @@ function App() {
       <div className="page-container mx-auto">
         <Nav />
 
-        <SortAZ updatedEmployees={updatedEmployees} employees={employees} />
-        <SortZA updatedEmployees={updatedEmployees} employees={employees} />
-        <FilterButton />
-
-        <Table data={employees} />
+        <div className="container">
+          <SortAZ updatedEmployees={updatedEmployees} employees={employees} />
+          <SortZA updatedEmployees={updatedEmployees} employees={employees} />
+          <br />
+          <Filter updatedEmployees={updatedEmployees} employees={data} />
+          <br />
+          <Table data={employees} />
+        </div>
       </div>
     </div>
   );
